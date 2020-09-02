@@ -1,0 +1,43 @@
+{
+  "name": "ai-project",
+  "version": "1.0.0",
+  "description": "An Amazing AI Project",
+  "main": "index.js",
+  "scripts": {
+    "electron:start": "electron ./",
+    "installer": "electron-builder --win -p always",
+    "prepare": "electron-build-env npm rebuild"
+  },
+  "dependencies": {
+    "@capacitor/electron": "^2.0.1",
+    "electron-build-env": "^0.2.0",
+    "electron-is-dev": "^1.1.0"
+  },
+  "devDependencies": {
+    "electron": "^8.2.3",
+    "electron-builder": "^22.4.1"
+  },
+  "keywords": [
+    "capacitor",
+    "electron"
+  ],
+  "author": "Michael Madume",
+  "license": "ISC",
+  "build": {
+    "appId": "com.ai.project",
+    "win": {
+      "target": "nsis",
+      "icon": "build/school_logo.ico"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": false
+    }
+  },
+  "type": "module",
+  "release": "build"
+}

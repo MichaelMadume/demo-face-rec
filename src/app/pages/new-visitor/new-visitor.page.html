@@ -1,0 +1,77 @@
+<ion-content fullscreen id="main">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <section class="section pp-scrollable contact active ">
+    <div class="display-table">
+      <div class="display-content">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-lg-12 mb-sm-1 mb-5">
+              <div class="text-center title">
+                <h2 class="text-dark">Please Check <span class="base-color">In </span></h2>
+                <p class="text-muted mb-5 max-width-450">Please fill the form below to check in</p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-9">
+
+
+              <form [formGroup]="visitorForm">
+                <div class="mx-auto">
+                  <div class="form-item">
+                    <div class="form-group">
+                      <input name="name" id="name" type="text" autocomplete="off" autocorrect="off"
+                        formControlName="name" class="form-control" placeholder="Your Name*" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="mx-auto">
+                  <div class="form-item">
+                    <div class="form-group">
+                      <input name="phoneNumber" id="phoneNumber" type="number" autocomplete="off" autocorrect="off"
+                        formControlName="phoneNumber" class="form-control"
+                        placeholder="Your Phone Number*" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="mx-auto">
+                  <div class="form-item">
+                    <div class="form-group">
+                      <input name="hostName" id="hostName" type="text" autocomplete="off" autocorrect="off"
+                        formControlName="hostName" class="form-control" placeholder="Your Host's Name*" required>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-md-8 mx-3 mt-1 mb-md-4 mx-md-auto">
+              <div class="button-border d-flex justify-content-center">
+                <a (click)="checkIn()" class="pill-button btn-block text-center base-color font-weight-bold">
+                  CHECK IN
+                  <ion-icon class="pl-1" md="arrow-forward"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="fixed-bottom mx-auto mb-3 text-center">
+    <div class="row justify-content-center">
+      <div class="col">
+        By Michael <span style="font-weight: 600;" class="base-color"> Madume </span>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

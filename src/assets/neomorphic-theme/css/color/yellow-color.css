@@ -1,0 +1,101 @@
+/*-----------------------------------------------------------
+* Template Name    : Arshia - Fully Responsive Personal Template
+* Author           : Retrina Group
+* Version          : 1.0.0
+* Created          : June 2020
+* File Description : Color css file of the template
+*------------------------------------------------------------*/
+::selection {
+    background: rgba(202, 170, 96,0.6)
+}
+::-moz-selection {
+    background: rgba(202, 170, 96,0.6)
+}
+.base-color{
+    color: #caaa60 !important;
+}
+.hero-social li a:hover, .blog-link a:hover{
+    color: #ad904d !important;
+}
+.bg-base-color {
+    background-color: #caaa60 !important;
+}
+header,
+.follow-label:before,
+.skill-box .fill-skillbar,
+.timeline-area:before,
+.testimonial .testimonial-border,
+.testimonial .owl-dot.active span,
+.blog-content:before,
+.blog .owl-dot.active span {
+    background: #caaa60;
+}
+.pill-button ,
+.pill-button:hover ,
+.ability ul li:before,
+.timeline-icon,
+.timeline-year ,
+.language-skill ul li i ,
+.contact .form-item .form-control,
+.comments .comment-info a,
+.portfolio .portfolio-icon a,
+.portfolio .portfolio-icon button,
+.blog-content button:hover,
+.comments .comment-info a:hover,
+.social a:hover
+{
+    color: #caaa60;
+}
+.loader {
+    border-top: 4px solid #caaa60 !important;
+}
+.timeline-icon{
+    border: 1px solid #caaa60;
+    background-color: #caaa60;
+}
+.portfolio .portfolio-item-content::before {
+
+    background-color:rgba(202, 170, 96,0.6)
+}
+.menu-toggler span {
+    background-color: rgb(202, 170, 96)
+}
+.timeline-item:before
+{
+    border: 2px solid #caaa60;
+}
+.timeline-item:before
+{
+    border: 1px solid #caaa60;
+}
+header {
+    box-shadow: inset -7px -7px 17px rgba(255, 215, 119, 0.6),inset 7px 7px 17px rgba(70,70,70,0.12);
+}
+.menu li a{
+    box-shadow: -4px -4px 7px rgba(255, 230, 170, 0.2),4px 4px 7px rgba(159, 126, 50,0.3);
+}
+.menu li a:hover, .menu li a.active{
+    box-shadow: inset -4px -4px 7px rgba(255, 230, 170, 0.2),inset 4px 4px 7px rgba(159, 126, 50,0.3);
+}
+.skill-box .skillbar {
+    box-shadow:  inset 3px 3px 8px rgba(55,84,170,0.3), inset -3px -3px 8px rgb(255,255, 255);
+}
+
+/*-------------------------
+      Flat Demo
+-------------------------*/
+.flat-demo .menu li a:hover, .flat-demo .menu li a.active{
+    background-color: rgba(173, 144, 77, 0.9)
+}
+.flat-demo .button-border, .arshia-dark.flat-demo .button-border{
+    background-color: #caaa60;
+}
+.flat-demo .pill-button:hover, .flat-demo .pill-button.active{
+    background-color: #ad904d;
+
+}
+
+
+
+
+

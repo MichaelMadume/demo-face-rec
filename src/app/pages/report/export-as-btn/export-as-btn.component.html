@@ -1,0 +1,22 @@
+<button class="pt-2" [disabled]="isDataSourceEmpty()" matTooltip="Download" mat-icon-button [matMenuTriggerFor]="menu"
+  aria-label="Download">
+  <mat-icon>save</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button (click)="exportAsXLSX()" mat-menu-item>
+    <mat-icon>list_alt</mat-icon>
+    <span>Excel (csv)</span>
+  </button>
+  <!-- <button (click)="exportAsPDF()" mat-menu-item>
+    <mat-icon>file_copy_filled</mat-icon>
+    <span>PDF</span>
+  </button>
+  <button (click)="exportAsDOCX()" mat-menu-item>
+    <mat-icon>font_download</mat-icon>
+    <span>Word (docx)</span>
+  </button>
+  <button (click)="exportAsPNG()" mat-menu-item>
+    <mat-icon>color_lens</mat-icon>
+    <span>Picture</span>
+  </button> -->
+</mat-menu>
